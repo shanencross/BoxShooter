@@ -98,15 +98,21 @@ public class SpawnGameObjects : MonoBehaviour {
 
 		//deactivate and initiate destruction of each child target
 		foreach (Transform childTransform in transform) {
-			if (childTransform.tag == "Target")
+			if (childTransform.tag == "Target") {
 				childTransform.GetComponent<TargetBehavior> ().targetActive = false;
 				childTransform.GetComponent<TargetExit> ().startTargetDestruction ();
+			} 
+			else if (childTransform.tag == "SpawnerLight") {
+				childTransform.gameObject.SetActive (false);
+			}
 		}
 		//Deactivate the spawner object
 		spawnerRunning = false;
 
 		//Flag spawner object for destruction after child objects are destroyed
 		spawnerKilled = true;
+
+		gameObject.GetComponent<MeshRenderer> ().enabled = false;
 	}
 
 	public void addPoints(int pointsAdded) {

@@ -73,7 +73,7 @@ public class MouseLooker : MonoBehaviour {
 		float xRot = Input.GetAxis("Mouse Y") * YSensitivity;
 
 		// calculate the rotation
-		m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
+		m_CharacterTargetRot *= Quaternion.Euler (0, yRot, 0f);
 		m_CameraTargetRot *= Quaternion.Euler (-xRot, 0f, 0f);
 
 		// clamp the vertical rotation if specified
