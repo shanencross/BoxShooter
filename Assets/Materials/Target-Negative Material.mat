@@ -102,8 +102,14 @@ Material:
         name: _EmissionScaleUI
       second: 2
     - first:
+        name: _GlossMapScale
+      second: 1
+    - first:
         name: _Glossiness
       second: 0
+    - first:
+        name: _GlossyReflections
+      second: 1
     - first:
         name: _Lightmapping
       second: 1
@@ -119,6 +125,12 @@ Material:
     - first:
         name: _Parallax
       second: 0.02
+    - first:
+        name: _SmoothnessTextureChannel
+      second: 0
+    - first:
+        name: _SpecularHighlights
+      second: 1
     - first:
         name: _SrcBlend
       second: 1

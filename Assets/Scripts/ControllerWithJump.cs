@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ControllerWithVariableJump : MonoBehaviour {
+public class ControllerWithJump : MonoBehaviour {
 
 	// public variables
 	public float moveSpeed = 6.0f;
@@ -61,7 +61,7 @@ public class ControllerWithVariableJump : MonoBehaviour {
 		// Apply gravity (so the object will fall if not grounded)
 		movement.y -= gravity * Time.deltaTime;
 
-		Debug.Log ("isGrounded: " + myController.isGrounded + "jumpPercentage: " + jumpPercentage + "; Movement Vector = " + movement);
+		// Debug.Log ("isGrounded: " + myController.isGrounded + "jumpPercentage: " + jumpPercentage + "; Movement Vector = " + movement);
 
 		// Actually move the character controller in the movement direction
 		myController.Move(movement * Time.deltaTime);

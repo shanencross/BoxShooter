@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movePlayerWithPlatform : MonoBehaviour {
+public class MovePlayerWithPlatform : MonoBehaviour {
 
 	//On collision with player, make player a child of the moving platform
 	//so that the player moves with the platform

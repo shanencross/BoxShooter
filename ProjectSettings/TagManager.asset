@@ -8,6 +8,7 @@ TagManager:
   - Spawner
   - Target
   - SpawnerLight
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

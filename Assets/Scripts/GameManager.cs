@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour {
 		if (!gameIsOver) {
 			if (canBeatLevel && (score >= beatLevelScore)) {  // check to see if beat game
 				BeatLevel ();
-			} else if (currentTime < 0) { // check to see if timer has run out
+			} else if (currentTime <= 0) { // check to see if timer has run out
 				EndGame ();
 			} else { // game playing state, so update the timer
 				currentTime -= Time.deltaTime;
